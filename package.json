@@ -1,0 +1,20 @@
+{
+  "name": "hexletfirstproject",
+  "version": "1.0.0",
+  "description": "BrainGames 18.03.19",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "src/bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhail Asalkhanov",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4"
+  }
+}
