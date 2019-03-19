@@ -2,7 +2,6 @@
   "name": "hexletfirstproject",
   "version": "1.0.0",
   "description": "BrainGames 18.03.19",
-  "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -14,6 +13,10 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "brain games",
+    "hexlet"
+  ],
   "author": "Mikhail Asalkhanov",
   "license": "ISC",
   "dependencies": {
