@@ -14,8 +14,6 @@ export const randomInt = (min, max) => {
   return rand;
 };
 
-export const isEven = int => (int % 2 === 0 ? 'yes' : 'no');
-
 export const gameDescription = (game) => {
   switch (game) {
     case 'brain-even':
