@@ -1,9 +1,8 @@
 {
   "name": "hexletfirstproject",
-  "version": "1.3.5",
+  "version": "1.4.5",
   "description": "BrainGames 18.03.19",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js"
   },
