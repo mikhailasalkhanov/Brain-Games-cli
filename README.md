@@ -4,4 +4,4 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/79f0dc11287eee3e685a/test_coverage)](https://codeclimate.com/github/mikhailasalkhanov/project-lvl1-s462/test_coverage)
 
-<a href="https://asciinema.org/a/FYvJTf18pXnPAoWKAjTfOIoJf?autoplay=1" target="_blank"><img src="https://asciinema.org/a/FYvJTf18pXnPAoWKAjTfOIoJf.svg" /></a>
+<a href="https://asciinema.org/a/2M4qMRx5GVmbZGQjHizJHiWOG?autoplay=1" target="_blank"><img src="https://asciinema.org/a/2M4qMRx5GVmbZGQjHizJHiWOG.svg" /></a>
