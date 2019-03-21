@@ -1,42 +1,38 @@
 import readlineSync from 'readline-sync';
+import brainEven from './games/even';
+import brainCalc from './games/calc';
 
-export const greeting = () => {
-  console.log('Welcome to the Brain Games!\n');
+export const askPlayerName = () => {
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
+  return playerName;
 };
 
-const randomInt = (min, max) => {
+export const randomInt = (min, max) => {
   let rand = min + Math.random() * (max + 1 - min);
   rand = Math.floor(rand);
   return rand;
 };
 
-const isEven = int => (int % 2 === 0 ? 'yes' : 'no');
+export const isEven = int => (int % 2 === 0 ? 'yes' : 'no');
 
-export const brainEven = () => {
-  console.log('Welcome to the Brain Games!\n');
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
-  const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  let attempt = 1;
+export const gameDescription = (game) => {
+  switch (game) {
+    case 'brain-even':
+      console.log('Answer "yes" if number even otherwise answer "no".\n');
+      break;
+    case 'brain-calc':
+      console.log('What is the result of the expression?\n');
+      break;
+    default:
+      break;
+  }
+};
 
-  while (attempt < 4) {
-    const evenOrNot = randomInt(1, 1000);
-    console.log(`Question: ${evenOrNot}`);
-    const playerAnswer = readlineSync.question('Your answer: ').toLowerCase();
-    const isCorrectAnswer = isEven(evenOrNot) === playerAnswer;
-
-    if (isCorrectAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${isCorrectAnswer}"`);
-      console.log(`Let's try again, ${playerName}`);
-      return;
-    }
-
-    attempt += 1;
+export const selectGame = (game) => {
+  if (game === 'brain-even') {
+    return brainEven();
   }
 
-  console.log(`Congratulations, ${playerName}`);
+  return brainCalc();
 };

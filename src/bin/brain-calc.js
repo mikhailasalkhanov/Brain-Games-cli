@@ -2,4 +2,4 @@
 
 import game from '../engine';
 
-game('brain-even');
+game('brain-calc');
