@@ -1,8 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import readlineSync from 'readline-sync';
 import { randomInt } from '..';
+import engine from '../engine';
 
-export default () => {
+const generateExpression = () => {
   const leftOperand = randomInt(1, 10);
   const rightOperand = randomInt(1, 10);
 
@@ -26,8 +26,10 @@ export default () => {
       break;
   }
 
-  console.log(`Question: ${question}`);
-  const playerAnswer = parseInt(readlineSync.question('Your answer: '), 10);
+  return cons(question, answer.toString());
+};
 
-  return cons(answer, playerAnswer);
+export default () => {
+  const questionsAndAnswers = [ generateExpression(), generateExpression(), generateExpression()];
+  engine('What is the result of the expression?', questionsAndAnswers);
 };

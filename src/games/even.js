@@ -1,13 +1,18 @@
-import { cons } from 'hexlet-pairs';
-import readlineSync from 'readline-sync';
 import { randomInt } from '..';
+import { cons } from 'hexlet-pairs';
+import engine from '../engine';
+
 
 export default () => {
-  const evenOrNot = randomInt(1, 1000);
-  console.log(`Question: ${evenOrNot}`);
+  const isEven = int => (int % 2 === 0 ? 'yes' : 'no');
 
-  const playerAnswer = readlineSync.question('Your answer: ');
-  const answer = evenOrNot % 2 === 0 ? 'yes' : 'no';
+  const question1 = randomInt(1, 100);
+  const question2 = randomInt(1, 100);
+  const question3 = randomInt(1, 100);
 
-  return cons(answer, playerAnswer);
+  const questionsAndAnswers = [
+    cons(question1, isEven(question1)),
+    cons(question2, isEven(question2)),
+    cons(question3, isEven(question3))];
+  engine('Answer "yes" if number even otherwise answer "no".', questionsAndAnswers);
 };
