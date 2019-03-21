@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 
 export const greeting = () => {
+  console.log('Welcome to the Brain Games!\n');
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
-  return playerName;
 };
 
 const randomInt = (min, max) => {
@@ -15,7 +15,10 @@ const randomInt = (min, max) => {
 const isEven = int => (int % 2 === 0 ? 'yes' : 'no');
 
 export const brainEven = () => {
-  const playerName = greeting();
+  console.log('Welcome to the Brain Games!\n');
+  console.log('Answer "yes" if number even otherwise answer "no".\n');
+  const playerName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${playerName}!`);
   let attempt = 1;
 
   while (attempt < 4) {
