@@ -1,6 +1,6 @@
 {
   "name": "hexletfirstproject",
-  "version": "1.4.5",
+  "version": "1.5.5",
   "description": "BrainGames 18.03.19",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",

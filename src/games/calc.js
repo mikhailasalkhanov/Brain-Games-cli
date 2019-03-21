@@ -30,6 +30,6 @@ const generateExpression = () => {
 };
 
 export default () => {
-  const questionsAndAnswers = [ generateExpression(), generateExpression(), generateExpression()];
+  const questionsAndAnswers = [generateExpression(), generateExpression(), generateExpression()];
   engine('What is the result of the expression?', questionsAndAnswers);
 };

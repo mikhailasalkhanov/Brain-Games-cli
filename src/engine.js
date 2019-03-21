@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import { askPlayerName } from '.';
 import { car, cdr } from 'hexlet-pairs';
+import { askPlayerName } from '.';
 
 export default (gameDescription, questionsAndAnswers) => {
   console.log('Welcome to the Brain Games');
