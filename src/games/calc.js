@@ -1,18 +1,18 @@
 import { cons } from 'hexlet-pairs';
-import { randomInt } from '..';
+import randomInt from '..';
 import engine from '../engine';
+
+const operators = [' + ', ' - ', ' * '];
 
 const generateExpression = () => {
   const leftOperand = randomInt(1, 10);
   const rightOperand = randomInt(1, 10);
+  const randomIndex = randomInt(0, operators.length - 1);
 
-  const operators = [' + ', ' - ', ' * '];
-  const i = randomInt(0, 2);
-
-  const question = `${leftOperand}${operators[i]}${rightOperand}`;
+  const question = `${leftOperand}${operators[randomIndex]}${rightOperand}`;
   let answer = 0;
 
-  switch (i) {
+  switch (randomIndex) {
     case 0:
       answer = leftOperand + rightOperand;
       break;
@@ -30,6 +30,11 @@ const generateExpression = () => {
 };
 
 export default () => {
-  const questionsAndAnswers = [generateExpression(), generateExpression(), generateExpression()];
-  engine('What is the result of the expression?', questionsAndAnswers);
+  const description = 'What is the result of the expression?';
+  const questionsAndAnswers = [];
+
+  for (let pair = 1; pair <= 3; pair += 1) {
+    questionsAndAnswers.push(generateExpression());
+  }
+  engine(description, questionsAndAnswers);
 };
