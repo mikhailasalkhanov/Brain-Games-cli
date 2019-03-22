@@ -2,6 +2,7 @@ import { cons } from 'hexlet-pairs';
 import randomInt from '..';
 import engine from '../engine';
 
+const description = 'What is the result of the expression?';
 const operators = [' + ', ' - ', ' * '];
 
 const generateExpression = () => {
@@ -30,7 +31,6 @@ const generateExpression = () => {
 };
 
 export default () => {
-  const description = 'What is the result of the expression?';
   const questionsAndAnswers = [];
 
   for (let pair = 1; pair <= 3; pair += 1) {

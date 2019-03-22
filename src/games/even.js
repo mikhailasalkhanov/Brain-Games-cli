@@ -2,9 +2,9 @@ import randomInt from '..';
 import { cons } from 'hexlet-pairs';
 import engine from '../engine';
 
+const description = 'Answer "yes" if number even otherwise answer "no".';
 
 export default () => {
-  const description = 'Answer "yes" if number even otherwise answer "no".';
   const questionsAndAnswers = [];
 
   for (let pair = 1; pair <= 3; pair += 1) {
