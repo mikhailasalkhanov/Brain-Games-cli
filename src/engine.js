@@ -3,21 +3,15 @@ import { car, cdr } from 'hexlet-pairs';
 
 export const rounds = 3;
 
-export const randomInt = (min, max) => {
-  let rand = min + Math.random() * (max + 1 - min);
-  rand = Math.floor(rand);
-  return rand;
-};
-
-export default (gameDescription, questionsAndAnswers) => {
+export default (gameDescription, gameData) => {
   console.log('Welcome to the Brain Games');
   console.log(gameDescription, '\n');
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
 
-  for (let attempt = 0; attempt < rounds; attempt += 1) {
-    const question = car(questionsAndAnswers[attempt]);
-    const correctAnswer = cdr(questionsAndAnswers[attempt]);
+  for (let i = 0; i < rounds; i += 1) {
+    const question = car(gameData[i]);
+    const correctAnswer = cdr(gameData[i]);
 
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
