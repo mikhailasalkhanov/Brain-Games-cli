@@ -1,18 +1,19 @@
 import { cons } from 'hexlet-pairs';
-import engine, { rounds, randomInt } from '../engine';
+import engine, { rounds } from '../engine';
+import randomInt from '../utils';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 
 const isEven = int => int % 2 === 0;
 
 export default () => {
-  const questionsAndAnswers = [];
+  const gameData = [];
 
-  for (let pair = 1; pair <= rounds; pair += 1) {
+  for (let i = 1; i <= rounds; i += 1) {
     const question = randomInt(1, 100);
     const answer = isEven(question) ? 'yes' : 'no';
-    questionsAndAnswers.push(cons(question, answer));
+    gameData.push(cons(question, answer));
   }
 
-  engine(description, questionsAndAnswers);
+  engine(description, gameData);
 };

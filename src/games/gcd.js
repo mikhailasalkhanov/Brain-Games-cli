@@ -1,28 +1,30 @@
 import { cons } from 'hexlet-pairs';
-import engine, { rounds, randomInt } from '../engine';
+import engine, { rounds } from '../engine';
+import randomInt from '../utils';
+
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const greatestCommonDivisor = (a, b) => {
+const getGreatestCommonDivisor = (a, b) => {
   if (b === 0) {
     return a;
   }
 
-  return greatestCommonDivisor(b, a % b);
+  return getGreatestCommonDivisor(b, a % b);
 };
 
 export default () => {
-  const questionsAndAnswers = [];
+  const gameData = [];
 
-  for (let pair = 1; pair <= rounds; pair += 1) {
+  for (let i = 1; i <= rounds; i += 1) {
     const int1 = randomInt(1, 100);
     const int2 = randomInt(1, 100);
 
     const question = `${int1} ${int2}`;
-    const answer = greatestCommonDivisor(int1, int2).toString();
+    const answer = getGreatestCommonDivisor(int1, int2).toString();
 
-    questionsAndAnswers.push(cons(question, answer));
+    gameData.push(cons(question, answer));
   }
 
-  engine(description, questionsAndAnswers);
+  engine(description, gameData);
 };
