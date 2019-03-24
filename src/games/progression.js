@@ -4,16 +4,16 @@ import randomInt from '../utils';
 
 
 const description = 'What number is missing in the progression?';
-const progressionLen = 10;
+const length = 10;
 
 const generateProgression = () => {
   const progression = [];
-  const firstElem = randomInt(1, 100);
+  const firstElement = randomInt(1, 100);
   const step = randomInt(1, 10);
 
-  for (let i = 1; i <= progressionLen; i += 1) {
-    const nextElem = firstElem + step * (i - 1);
-    progression.push(nextElem);
+  for (let i = 0; i < length; i += 1) {
+    const nextElement = firstElement + step * i;
+    progression.push(nextElement);
   }
 
   return progression;
@@ -24,11 +24,9 @@ export default () => {
 
   for (let i = 0; i < rounds; i += 1) {
     const progression = generateProgression();
-    const positionHiddenElem = randomInt(0, progressionLen - 1);
-    const hiddenElem = progression[positionHiddenElem];
-
-    const answer = `${hiddenElem}`;
-    progression[positionHiddenElem] = '..';
+    const hiddenElementPosition = randomInt(0, length - 1);
+    const answer = `${progression[hiddenElementPosition]}`;
+    progression[hiddenElementPosition] = '..';
     const question = progression.join(' ');
 
     gameData.push(cons(question, answer));
