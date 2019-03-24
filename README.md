@@ -6,7 +6,7 @@
 - Brain-even - *answer even number or odd*
 - Brain-calc - *evaluate expression*
 - Brain-gcd - *find greatest common divisor*
-- Brain-progression - *find missind element*
+- Brain-progression - *find missing element*
 - Brain-prime - *prime number or not?*
 
 ### How to install
