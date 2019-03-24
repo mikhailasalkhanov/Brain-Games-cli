@@ -11,7 +11,7 @@ const getAnswer = (operator, a, b) => {
     '-': a - b,
     '*': a * b,
   };
-  
+
   return expressions[operator];
 };
 
