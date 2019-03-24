@@ -11,7 +11,10 @@ start-gcd:
 	npx babel-node src/bin/brain-gcd.js
 
 start-progression:
-	npx babel-node src/bin/brain-progression.js	
+	npx babel-node src/bin/brain-progression.js
+
+start-prime:
+	npx babel-node src/bin/brain-prime.js	
 
 publish:
 	npm publish
