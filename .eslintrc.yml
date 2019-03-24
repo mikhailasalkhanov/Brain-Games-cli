@@ -1,7 +1,5 @@
 ---
 
-plugins:
-  - babel
 env:
   node: true
 
