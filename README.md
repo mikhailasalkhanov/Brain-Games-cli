@@ -9,11 +9,13 @@
 - Brain-progression - *find missing element*
 - Brain-prime - *prime number or not?*
 
+
+  
 ### How to install
-> sudo npm install -g hexletfirstproject
+    sudo npm install -g hexletfirstproject`
 
 #### Enter name of the game to run. Example (see asciinemas below):
-> brain-progression
+    brain-progression
 
 ### Brain-even
 <a href="https://asciinema.org/a/uEB7fepJgM0kpfT8FyyOL7lMM?autoplay=1" target="_blank"><img src="https://asciinema.org/a/uEB7fepJgM0kpfT8FyyOL7lMM.svg" /></a>
