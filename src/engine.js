@@ -12,7 +12,6 @@ export default (gameDescription, gameData) => {
   for (let i = 0; i < rounds; i += 1) {
     const question = car(gameData[i]);
     const correctAnswer = cdr(gameData[i]);
-
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
 

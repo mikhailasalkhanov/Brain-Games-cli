@@ -2,7 +2,6 @@ import { cons } from 'hexlet-pairs';
 import engine, { rounds } from '../engine';
 import randomInt from '../utils';
 
-
 const description = 'What number is missing in the progression?';
 const length = 10;
 
