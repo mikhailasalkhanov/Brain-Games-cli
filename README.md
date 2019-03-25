@@ -14,7 +14,7 @@
 ### How to install
     sudo npm install -g hexletfirstproject`
 
-#### Enter name of the game to run. Example (see asciinemas below):
+### Enter name of the game to run, for example (see asciinemas below):
     brain-progression
 
 ### Brain-even
