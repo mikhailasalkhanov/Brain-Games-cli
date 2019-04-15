@@ -1,6 +1,5 @@
 # ***Brain Games***
-
-[![Build Status](https://travis-ci.com/mikhailasalkhanov/project-lvl1-s462.svg?branch=master)](https://travis-ci.com/mikhailasalkhanov/project-lvl1-s462) [![Maintainability](https://api.codeclimate.com/v1/badges/79f0dc11287eee3e685a/maintainability)](https://codeclimate.com/github/mikhailasalkhanov/project-lvl1-s462/maintainability)
+[![Build Status](https://travis-ci.com/mikhailasalkhanov/Brain-Games-cli.svg?branch=master)](https://travis-ci.com/mikhailasalkhanov/Brain-Games-cli) [![Maintainability](https://api.codeclimate.com/v1/badges/79f0dc11287eee3e685a/maintainability)](https://codeclimate.com/github/mikhailasalkhanov/project-lvl1-s462/maintainability)
 
 ### 5 different console games:
 - Brain-even - *answer even number or odd*
