@@ -11,7 +11,7 @@
 
   
 ### How to install
-    sudo npm install -g hexletfirstproject`
+    npm install -g hexletfirstproject`
 
 ### Enter name of the game to run, for example (see asciinemas below):
     brain-progression
