@@ -14,16 +14,5 @@
 ### How to install
     sudo npm install -g hexletfirstproject
 
-### Enter name of the game to run, for example (see asciinemas below):
+### Enter name of the game to run:
     brain-progression
-
-### Brain-even
-<a href="https://asciinema.org/a/uEB7fepJgM0kpfT8FyyOL7lMM?autoplay=1" target="_blank"><img src="https://asciinema.org/a/uEB7fepJgM0kpfT8FyyOL7lMM.svg" /></a>
-### Brain-calc
-<a href="https://asciinema.org/a/2M4qMRx5GVmbZGQjHizJHiWOG?autoplay=1" target="_blank"><img src="https://asciinema.org/a/2M4qMRx5GVmbZGQjHizJHiWOG.svg" /></a>
-### Brain-gcd
-<a href="https://asciinema.org/a/Y8nTSeyf4KWjV11P8f8dJTz1W?autoplay=1" target="_blank"><img src="https://asciinema.org/a/Y8nTSeyf4KWjV11P8f8dJTz1W.svg" /></a>
-### Brain-progression
-<a href="https://asciinema.org/a/3SGX0rfagLH9grlX6rmtkvAG4?autoplay=1" target="_blank"><img src="https://asciinema.org/a/3SGX0rfagLH9grlX6rmtkvAG4.svg" /></a>
-### Brain-prime
-<a href="https://asciinema.org/a/i3emUAhVkqZUrLCjkZqpaWjYd?autoplay=1" target="_blank"><img src="https://asciinema.org/a/i3emUAhVkqZUrLCjkZqpaWjYd.svg" /></a>
